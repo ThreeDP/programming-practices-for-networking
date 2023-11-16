@@ -8,6 +8,15 @@
 
 typedef struct addrinfo t_addrinfo;
 
+/*
+$ showip www.example.net
+	Endereço IP para www.example.net:
+		IPv4: 192.0.2.88
+$ showip ipv6.example.com
+	Endereço IP para ipv6.example.com:
+		IPv4: 192.0.2.101
+		IPv6: 2001:db8:8c00:22::171
+*/
 int main(int ac, char **av) {
 	t_addrinfo		*p;
 	t_addrinfo 		*res;
